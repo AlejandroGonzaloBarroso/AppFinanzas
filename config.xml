@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pocketmanager.wrapper" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PocketManager</name>
+    <description>
+        Gestor de finanzas y asesoría personal.
+    </description>
+    <author email="agonzalo@ejemplo.com" href="https://alejandrogonzalobarroso.github.io">
+        Alejandro Gonzalo
+    </author>
+    
+    <!-- PUNTO DE ENTRADA: Archivo local que redirige -->
+    <content src="index.html" />
+    
+    <!-- PERMISOS DE ACCESO -->
+    <access origin="*" />
+    
+    <!-- LISTA BLANCA DE NAVEGACIÓN (Tus URLs externas) -->
+    <allow-navigation href="https://alejandrogonzalobarroso.github.io/*" />
+    <allow-navigation href="https://*.supabase.co/*" />
+    <allow-navigation href="https://meet.jit.si/*" />
+    
+    <!-- INTENCIONES EXTERNAS (Abrir app de teléfono, mail, etc) -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    
+    <!-- PLATAFORMA ANDROID -->
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="Orientation" value="portrait" />
+        <preference name="StatusBarBackgroundColor" value="#4f46e5" />
+    </platform>
+    
+    <!-- PLUGINS -->
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~5.0.0" />
+    <plugin name="cordova-plugin-statusbar" spec="~2.4.2" />
+</widget>
