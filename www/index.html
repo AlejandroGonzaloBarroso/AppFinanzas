@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Redirección de seguridad inmediata -->
+    <meta http-equiv="refresh" content="0; url=https://alejandrogonzalobarroso.github.io/PaginaIA_AGONZALO/PaginaFinalAGonzalo/" />
+    
+    <title>Cargando PocketManager...</title>
+    
+    <script src="cordova.js"></script>
+    
+    <style>
+        body {
+            background-color: #0f172a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+        }
+        .loader {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-left-color: #4f46e5;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+    
+    <script>
+        document.addEventListener('deviceready', function() {
+            // Configurar barra de estado
+            if (window.StatusBar) {
+                StatusBar.backgroundColorByHexString("#4f46e5");
+                StatusBar.styleLightContent();
+            }
+            // Redirigir a la web real
+            window.location.href = "https://alejandrogonzalobarroso.github.io/PaginaIA_AGONZALO/PaginaFinalAGonzalo/";
+        }, false);
+
+        // Fallback
+        setTimeout(function() {
+            window.location.href = "https://alejandrogonzalobarroso.github.io/PaginaIA_AGONZALO/PaginaFinalAGonzalo/";
+        }, 1500);
+    </script>
+</head>
+<body>
+    <div class="loader"></div>
+    <p>Iniciando...</p>
+</body>
+</html>
