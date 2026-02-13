@@ -18,7 +18,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '18'
 
       - name: Configurar Java
         uses: actions/setup-java@v4
@@ -32,7 +32,7 @@ jobs:
           npm install
 
       - name: Añadir Plataforma Android
-        run: cordova platform add android
+        run: cordova platform add android@13.0.0
 
       - name: Construir APK (Debug)
         run: cordova build android --debug -- --packageType=apk
